@@ -1,7 +1,7 @@
 name: leanplum_flutter
-description: A flutter plugin for the Leanplum SDK
+description: A flutter plugin for the Leanplum SDK - https://www.leanplum.com
 version: 0.0.1
-author:
+author: PEDRO CULQUE <gonzales4r@hotmail.com>
 homepage:
 
 environment:
