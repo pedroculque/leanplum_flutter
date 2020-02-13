@@ -4,6 +4,8 @@ A flutter plugin for the Leanplum SDK
 
 ## Getting Started
 
+The Leanplum Flutter plugin allows you to access to the GDPR methods from the Dart code.
+
 Nevertheless, the configuration of the SDK must still be done at the android and iOS app level.
 
 A [Flutter application](https://github.com/pculque/leanplum_flutter) is available on github to show you a concrete implementation.
@@ -53,7 +55,12 @@ Before following the previous tutorial. You need to open the application build.g
 
 ### iOS
 
+- To enable Push Notifications on iOS, you need to upload your certificates to Leanplum and register for remote notifications in your app.
+
+[https://docs.leanplum.com/reference#ios-push-notifications](https://docs.leanplum.com/reference#ios-push-notifications)
+
 First thing to do is to update the Podfile sources, you can add at the beginning of the file the following URLs:
+
 - source 'https://github.com/CocoaPods/Specs.git'
 
 Then, you also need to set the minimum platform support to 8.0:
@@ -61,7 +68,7 @@ Then, you also need to set the minimum platform support to 8.0:
 ```
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '9.0'
+platform :ios, '8.0'
 ```
 
 Leanplum SDK flutter plugin uses a beta version of the SDK, please ensure that in your final Podfile
@@ -71,3 +78,13 @@ pod 'Leanplum-iOS-SDK', '2.6.4'
 ```
 
 You're ready to follow the iOS tutorial.
+
+### Android push notifications
+
+- To use FCM with Leanplum, you need to:
+
+Verify that your Gradle files include the correct FCM and Leanplum libraries (see above).
+Download your google-services.json config file (see how here).
+Add the above file to your root app/ folder.
+Copy your FCM Server Key. In the Firebase console, click the gear icon next to Overview, then click Project Settings.Then, in your project's settings, go to the Cloud Messaging tab. In this section of your settings, you will see your Server key. Copy the key.
+
