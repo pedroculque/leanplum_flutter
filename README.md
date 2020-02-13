@@ -4,11 +4,72 @@ A flutter plugin for the Leanplum SDK
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+The Connecthings Flutter plugin allows you to access to the GDPR methods and In-App actions methods from the Dart code.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Nevertheless, the configuration of the SDK must still be done at the android and iOS app level.
+
+A [Flutter application](https://github.com/pculque/leanplum_flutter) is available on github to show you a concrete implementation.
+
+You just have to clone the plugin repository [https://github.com/pculque/leanplum_flutter](https://github.com/pculque/leanplum_flutter), and open it with an android studio configured for flutter.
+
+## Add the plugin to your project
+
+* Open the **pubspec.yaml**
+* add to the dependencies section
+
+```yaml
+leanplum_flutter:0.0.2
+```
+
+## Initialize the SDK
+
+Follow the [iOS](https://docs.leanplum.com/reference#ios-setup) and [Android](https://docs.leanplum.com/reference#android-setup) 10-15 minutes quickstart to initialize the SDK
+at the native app level.
+
+### Android
+
+Before following the previous tutorial. You need to open the application build.gradle and change two things :
+- You need to add the Firebase Messaging dependency to your application, to be able to initialize the SDK.
+- You need to add the Leanplum dependency to your application, to be able to initialize the SDK.
+
+```
+// Firebase messaging.
+  // Minimum supported version of Firebase is 10.0.1.
+  implementation 'com.leanplum:leanplum-fcm:5.3.3'
+  implementation 'com.google.firebase:firebase-messaging:17.5.0'
+
+  // Location services.
+  // Only include if you need location-based messaging.
+  // Minimum supported version of play location is:
+  // 10.0.1 for FCM.
+
+```
+
+>**Warning:**
+>
+> On Android, when you extend the default application you must use the **FlutterApplication** and not the default Application
+>
+> ```java
+> public class FlutterApp extends FlutterApplication
+> ```
+
+### iOS
+
+First thing to do is to update the Podfile sources, you can add at the beginning of the file the following URLs:
+- source 'https://github.com/CocoaPods/Specs.git'
+
+Then, you also need to set the minimum platform support to 8.0:
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+```
+
+Leanplum SDK flutter plugin uses a beta version of the SDK, please ensure that in your final Podfile
+
+```
+pod 'Leanplum-iOS-SDK', '2.6.4'
+```
+
+You're ready to follow the iOS tutorial.
