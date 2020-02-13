@@ -4,8 +4,6 @@ A flutter plugin for the Leanplum SDK
 
 ## Getting Started
 
-The Connecthings Flutter plugin allows you to access to the GDPR methods and In-App actions methods from the Dart code.
-
 Nevertheless, the configuration of the SDK must still be done at the android and iOS app level.
 
 A [Flutter application](https://github.com/pculque/leanplum_flutter) is available on github to show you a concrete implementation.
