@@ -29,7 +29,7 @@ at the native app level.
 ### Android
 
 Before following the previous tutorial. You need to open the application build.gradle and change two things :
-- You need to add the Firebase Messaging dependency to your application, to be able to initialize the SDK.
+- You need to add the 'Firebase Messaging dependency to your application', to be able to initialize the SDK.
 - You need to add the Leanplum dependency to your application, to be able to initialize the SDK.
 
 ```
@@ -55,7 +55,7 @@ Before following the previous tutorial. You need to open the application build.g
 
 ### iOS
 
-- To enable Push Notifications on iOS, you need to upload your certificates to Leanplum and register for remote notifications in your app.
+- To 'enable Push Notifications' on iOS, you need to upload your certificates to Leanplum and register for remote notifications in your app.
 
 [https://docs.leanplum.com/reference#ios-push-notifications](https://docs.leanplum.com/reference#ios-push-notifications)
 
