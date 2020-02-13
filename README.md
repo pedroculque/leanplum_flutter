@@ -86,5 +86,6 @@ You're ready to follow the iOS tutorial.
 1. Verify that your Gradle files include the correct FCM and Leanplum libraries (see above).
 2. Download your google-services.json config file (see how here).
 3. Add the above file to your root app/ folder.
-4. Copy your FCM Server Key. In the Firebase console, click the gear icon next to Overview, then click Project Settings.Then, in your project's settings, go to the Cloud Messaging tab. In this section of your settings, you will see your Server key. 1. 5. Copy the key.
+4. Copy your FCM Server Key. In the Firebase console, click the gear icon next to Overview, then click Project Settings.Then, in your project's settings, go to the Cloud Messaging tab. In this section of your settings, you will see your Server key.
+5. Copy the key.
 
