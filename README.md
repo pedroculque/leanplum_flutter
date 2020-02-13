@@ -81,7 +81,7 @@ You're ready to follow the iOS tutorial.
 
 ### Android push notifications
 
-- To use FCM with Leanplum, you need to:
+###### To use FCM with Leanplum, you need to:
 
 1. Verify that your Gradle files include the correct FCM and Leanplum libraries (see above).
 2. Download your google-services.json config file (see how here).
