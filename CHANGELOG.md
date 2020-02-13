@@ -1,3 +1,7 @@
+## 0.0.2
+
+* Beta of Leaplum Plugin and Doc
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial version
