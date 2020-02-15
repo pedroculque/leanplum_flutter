@@ -89,3 +89,18 @@ You're ready to follow the iOS tutorial.
 4. Copy your FCM Server Key. In the Firebase console, click the gear icon next to Overview, then click Project Settings.Then, in your project's settings, go to the Cloud Messaging tab. In this section of your settings, you will see your Server key.
 5. Copy the key.
 
+## Setting  User ID
+
+The following method allow you to set a custom user ID in flutter layer.
+
+```dart
+LeanplumFlutter.setUserId('customUserId');
+```
+
+## Setting  User ID
+
+The following method allow you to set a custom device ID  in flutter layer.
+
+```dart
+LeanplumFlutter.setDeviceId('customDeviceId');
+```
